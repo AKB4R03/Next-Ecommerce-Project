@@ -13,7 +13,7 @@ export const loginAction = async (formData: FormData) => {
 
     const loginSchema = z.object({
         email: z.string().email(),
-        password: z.string()
+        password: z.string().nonempty()
     })
 
     const email = formData.get("email")

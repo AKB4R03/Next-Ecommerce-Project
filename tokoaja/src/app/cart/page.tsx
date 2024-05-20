@@ -161,15 +161,3 @@ export default function CartPage() {
     </>
   );
 }
-
-// if(user?.data.role === "driver" ){
-//   <button onClick={() => onLCickHandler(el._id)}>
-//                           {el.status}
-//                         </button>
-// }else if (el.status === "ongoing") {
-//   <button onClick={() => complete(el._id)}>
-//   {el.status}
-// </button>
-// }else {
-//   <p>{el.status}</p>
-// }

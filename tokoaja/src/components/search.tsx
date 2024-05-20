@@ -7,6 +7,8 @@ interface SearchProps {
 const Search: React.FC<SearchProps> = ({ onSearch }) => {
   const [query, setQuery] = useState("");
 
+  console.log(query, "------");
+
   const updateQuery = (e: ChangeEvent<HTMLInputElement> | null) => {
     if (e) {
       setQuery(e?.target?.value);
@@ -14,7 +16,7 @@ const Search: React.FC<SearchProps> = ({ onSearch }) => {
     }
   };
 
-  const debounceOnChange = debounce(updateQuery, 300);
+  const debounceOnChange = debounce(updateQuery, 200);
 
   return (
     <div className="flex items-center justify-center gap-4 pt-10 flex-row">
